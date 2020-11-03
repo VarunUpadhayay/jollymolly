@@ -7,9 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
   <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
    <link
     rel="stylesheet"
@@ -155,31 +153,29 @@ Because of Site_Name, millions of people would have access to advice and support
 
 
 
-<!-------------------------------Footer-------------------------------------------------------->
-<br><br><br><br>
-<footer class="site-footer" style="background-color: black; ">
+<footer class="site-footer"  style="background-color: black; " >
 
 
 <div class="container">
 
-<div class="row">
-<div class="col-md-4 col-sm-4 col-xs-12">
-	<h2>OUR MISSION</h2>
-	<p class="text-justify">“To make you believe the world has a better insight of itself.”</p>
-	<img src="capture.PNG">
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+	<h2 class="text-center">OUR MISSION</h2>
+	<p class="text-justify text-center">“To make you believe the world has a better insight of itself.”</p>
+       <img class="foootimg" src="fff.jpg"><br>
 </div>	
-<div class="col-md-4 col-sm-4 col-xs-12">
+<!-- <div class="col-md-4 col-sm-4 col-xs-12">
 	<h2>CONTACT US</h2>
 	<p class="text-justify">EMAIL: abc@gmail.com</p>
 	<p class="text-justify">PHONE: +91-xxx-xxxx-xxx</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
+</div> -->
+<!-- <div class="col-md-4 col-sm-4 col-xs-12">
 	<h2>MAIL US IF ANY ISSUES</h2>
 	<div class="_content">
 		<form action="#">
 			<div class="email">
 				<div class="text">
-					Email*
+					Email
 					</div>
 					<input type="email" required>
 			</div>
@@ -188,33 +184,63 @@ Because of Site_Name, millions of people would have access to advice and support
 				<textarea rows="2" cols="25" required id="txtar"></textarea>
 			</div>
 			<div class="btn">
-				<button class="btn-sm btn-outline-info">Send</button>
+				<button class="btn-sm btn-outline-info" ">Send</button>
 			</div>
 		</form>
 
 </div>
-</div>
-</div>
+</div> -->
+
+
 <hr>	
 </div>	
-<script>
-	 gsap.from(".col-md-4", {
-  scrollTrigger:{
-    trigger:".col-12",
-     start:"1600px center",
-     ,
-     
-    
-     
-  },
-  y:"-100px",
-   opacity:0,
-   duration:0.5,
-   stagger:0.2,
-   ease: "power3.out"
-});
-</script>
+<button class="open-button" onclick="openForm()"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></i></button>
 
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2 class="text-dark text-center">Company_name</h2>
+    <button type="button" class="cross p-2" onclick="closeForm()" >&times;</button>
+
+    <label for="msg" class="p-2"><b>Hi! Let us know how we can help and we’ll respond shortly.</b></label>
+    <div class="form-group " style="margin-top: 10px; margin-bottom: 25px;">
+	
+    <input type="text" id="user" placeholder=" Name*" class="form-control " >
+
+</div>
+
+<div class="form-group" style="margin-bottom: 25px;">
+	
+   <input type="text" id="mail" placeholder="Email*" class="form-control p-3">
+</div>
+
+    <textarea placeholder="How can we help?" name="msg" required></textarea>
+
+    <button type="submit" class="btn btn-success text-uppercase p-2">Send</button>
+    <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+  </form>
+</div>
+
+
+<div class="container">
+	<div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12 col-lg-12" id="hrtag">
+            <section class="copyright-text text-center" >Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#" style="font-family: 'Sedgwick Ave Display', cursive;">Jolly Molly</a>.
+            </section>
+          </div>
+</div>
+</div>
+</footer>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 <div class="container">
 	<div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12 col-lg-12" id="hrtag">
@@ -227,7 +253,9 @@ Because of Site_Name, millions of people would have access to advice and support
 </footer>
 
 	
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
 
